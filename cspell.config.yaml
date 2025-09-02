@@ -3,8 +3,10 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words: []
-ignoreWords: 
+ignoreWords:
   - enabledelayedexpansion
   - endlocal
   - setlocal
+  - errorlevel
+  - findstr
 import: []
