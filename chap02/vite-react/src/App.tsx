@@ -7,6 +7,15 @@ export default function App() {
       <h1>{10 < 20 ? '10이 더 작다' : '20이 더 크다'}</h1>
       {/* NOSONAR */ 10 > 20 && <h1>10이 20보다 크다</h1>}
       {/* NOSONAR */ 10 < 20 && <h1>10이 20보다 작다</h1>}
+      <hr />
+      <h1
+        style={{
+          color: 'red',
+          backgroundColor: 'lightgray',
+        }}
+      >
+        Styled Text
+      </h1>
     </>
   );
 }
