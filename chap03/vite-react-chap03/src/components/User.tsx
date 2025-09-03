@@ -1,17 +1,14 @@
-interface UserProps {
-  name: string;
-  age: number;
-  clickHandler: () => void;
-}
-
-export default function User(props: Readonly<UserProps>) {
-  const { name, age, clickHandler } = props;
-
+export default function User({
+  title,
+  children,
+}: Readonly<{
+  title: string;
+  children: React.ReactNode;
+}>) {
   return (
     <>
-      <p>name: {name}</p>
-      <p>age: {age}</p>
-      <button onClick={clickHandler}>클릭</button>
+      <h1>{title}</h1>
+      {children}
     </>
   );
 }
