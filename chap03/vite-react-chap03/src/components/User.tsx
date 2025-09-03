@@ -1,9 +1,3 @@
-// 인터페이스로 props 타입 분리
-interface UserProps {
-  userObj: { name: string; age: number };
-  clickHandler: () => void;
-}
-
 export default function User(props: Readonly<UserProps>) {
   const {
     userObj: { name, age },
