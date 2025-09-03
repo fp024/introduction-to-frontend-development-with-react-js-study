@@ -37,7 +37,7 @@ export default function User(props: Readonly<{ name: string; age: number }>) {
   ...
 ```
 
-* Readonly로 감싸라고 Sonarlint에서 경고가 나와서 추가.. 타입 수준에서 props 수정을 막아주는 안전장치.
+* Readonly<>로 감싸라고 Sonarlint에서 경고가 나와서 추가.. 타입 수준에서 props 수정을 막아주는 안전장치.
 
 
 
