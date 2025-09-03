@@ -10,5 +10,5 @@ export default function App() {
     console.log('clicked');
   };
 
-  return <User userObj={userObj} clickHandler={clickHandler} />;
+  return <User {...userObj} clickHandler={clickHandler} />;
 }
