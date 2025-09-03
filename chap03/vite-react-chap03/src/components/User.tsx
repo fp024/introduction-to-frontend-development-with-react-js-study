@@ -1,10 +1,14 @@
-export default function User({
-  userObj: { name, age },
-  clickHandler,
-}: Readonly<{
-  userObj: { name: string; age: number }; //
-  clickHandler: () => void;
-}>) {
+export default function User(
+  props: Readonly<{
+    userObj: { name: string; age: number };
+    clickHandler: () => void;
+  }>
+) {
+  const {
+    userObj: { name, age },
+    clickHandler,
+  } = props;
+
   return (
     <>
       <p>name: {name}</p>
