@@ -1,3 +1,6 @@
 export default function App() {
-  return <button onClick={(e) => console.log(e)}>click</button>;
+  const clickHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    console.log(e);
+  };
+  return <button onClick={clickHandler}>click</button>;
 }
