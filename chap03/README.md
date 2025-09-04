@@ -6,7 +6,7 @@
 
 ## 진행
 
-- [ ] 한번 읽어보기 !!!
+- [x] 한번 읽어보기 !!!
 
 * ...
 
@@ -51,12 +51,6 @@
 
 
 
-
-
-
-
-
-
 ### p101: Readonly 타입 설정
 
 ```ts
@@ -68,11 +62,17 @@ export default function User(props: Readonly<{ name: string; age: number }>) {
 
 
 
+### p137: 셀프체크
+
+* [vite-react-chap03-selfcheck](vite-react-chap03-selfcheck)
+  * 난 그냥 대충 만들었는데 😅, 저자님 해답을 보니 children 활용해서 Button 내용을 전달하셨다.
+
 
 
 ## 의견
 
-* ...
+* 일단 잘보았다.
+
   
 
 ## 정오표
