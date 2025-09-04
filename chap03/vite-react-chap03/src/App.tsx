@@ -3,7 +3,8 @@ export default function App() {
     console.log('Parent');
   };
 
-  const handleBubble = () => {
+  const handleBubble = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.stopPropagation();
     console.log('Child');
   };
 
