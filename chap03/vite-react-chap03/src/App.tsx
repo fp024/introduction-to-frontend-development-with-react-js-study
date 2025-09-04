@@ -1,11 +1,5 @@
-import User from './components/User';
+import Button from './components/Button';
 
 export default function App() {
-  return (
-    <User title="User Component">
-      <p>James</p>
-      <p>20</p>
-      <p>male</p>
-    </User>
-  );
+  return <Button onFive={() => alert('five')} />;
 }
