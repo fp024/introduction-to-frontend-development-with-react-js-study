@@ -1,19 +1,19 @@
 export default function App() {
-  const handleCapture = () => {
-    console.log('Parent');
-  };
-
-  const handleBubble = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.stopPropagation();
-    console.log('Child');
-  };
-
   return (
-    <div onClick={handleCapture} style={{ padding: '50px', backgroundColor: '#f0f0f0' }}>
-      Parent{' '}
-      <button onClick={handleBubble} style={{ marginTop: '20px' }}>
-        Click Me
-      </button>
-    </div>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        const form = e.currentTarget as HTMLFormElement;
+        const formData = new FormData(form);
+        const email = formData.get('email');
+        const password = formData.get('password');
+        console.log('email:', email);
+        console.log('password:', password);
+      }}
+    >
+      <input type="text" name="email" />
+      <input type="password" name="password" />
+      <button type="submit">전송</button>
+    </form>
   );
 }
