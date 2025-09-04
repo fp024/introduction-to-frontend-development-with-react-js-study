@@ -1,10 +1,18 @@
 export default function App() {
-  const clickHandler = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>, //
-    msg: string
-  ) => {
-    console.log(e);
-    alert(msg);
+  const handleCapture = () => {
+    console.log('Parent');
   };
-  return <button onClick={(e) => clickHandler(e, 'Hello')}>click</button>;
+
+  const handleBubble = () => {
+    console.log('Child');
+  };
+
+  return (
+    <div onClickCapture={handleCapture} style={{ padding: '50px', backgroundColor: '#f0f0f0' }}>
+      Parent{' '}
+      <button onClick={handleBubble} style={{ marginTop: '20px' }}>
+        Click Me
+      </button>
+    </div>
+  );
 }
