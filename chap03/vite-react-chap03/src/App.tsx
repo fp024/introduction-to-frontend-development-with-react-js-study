@@ -1,5 +1,7 @@
-import Button from './components/Button';
-
 export default function App() {
-  return <Button onFive={() => alert('five')} />;
+  const clickHandler = () => {
+    alert('Button clicked');
+  };
+
+  return <button onClick={clickHandler}>click</button>;
 }
