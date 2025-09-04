@@ -1,7 +1,15 @@
 export default function App() {
-  const clickHandler = () => {
-    alert('Button clicked');
+  const clickHandler = (msg: string) => {
+    alert(msg);
   };
 
-  return <button onClick={clickHandler}>click</button>;
+  return (
+    <button
+      onClick={() => {
+        clickHandler('hello');
+      }}
+    >
+      click
+    </button>
+  );
 }
