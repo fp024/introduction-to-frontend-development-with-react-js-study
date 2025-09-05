@@ -1,21 +1,17 @@
 import { useState } from 'react';
 
 export default function App() {
-  const [name, setName] = useState<string | null>(null);
-  const [age, setAge] = useState<number | null>(null);
-  const [gender, setGender] = useState<string | null>(null);
+  const [count, setCount] = useState(0);
   const clickHandler = () => {
-    setName('Mike');
-    setAge(23);
-    setGender('female');
+    setCount(count + 1);
+    setCount(count + 1);
+    setCount(count + 1);
   };
 
   return (
     <div>
-      <p>이름: {name}</p>
-      <p>나이: {age}</p>
-      <p>성별: {gender}</p>
-      <button onClick={clickHandler}>변경</button>
+      <h1>Count: {count}</h1>
+      <button onClick={clickHandler}>증가</button>
     </div>
   );
 }
