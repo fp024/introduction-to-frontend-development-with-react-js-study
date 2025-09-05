@@ -1,15 +1,13 @@
+import { useState } from 'react';
+
 export default function App() {
-  let name = '철수';
-  const age = 20;
-  const nameChange = () => {
-    name = '영희';
-    console.log(name);
-  };
+  const [count, setCount] = useState(0);
+  const clickHandler = () => setCount((count) => count + 1);
+
   return (
     <div>
-      <p>{name}</p>
-      <p>{age}</p>
-      <button onClick={nameChange}>Value Change</button>
+      <h1>Count: {count}</h1>
+      <button onClick={clickHandler}>증가</button>
     </div>
   );
 }
