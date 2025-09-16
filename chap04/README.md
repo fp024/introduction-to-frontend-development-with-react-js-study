@@ -23,6 +23,16 @@
 
 
 
+#### 💡button 기본 동작
+
+form 태그 안이 아니라면 button에 type을 지정하지 않더라도, 기본 동작인 submit이 발생하지 않지만, 
+
+form 태그 않의 button은 타입을 지정하지 않으면 submit이 발생한다.
+
+MS Edge 확장에서는 button 타입을 항상 지정할 것을 권장했다.
+
+
+
 
 
 
