@@ -3,6 +3,7 @@ import Count from './components/counter';
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const increment = () => setCount((count) => count + 1);
 
-  return <Count count={count} setCount={setCount} />;
+  return <Count count={count} increment={increment} />;
 }
