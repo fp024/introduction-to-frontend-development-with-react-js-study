@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "typescript-config/is-valid": "off",
+    "typescript-config/consistent-casing": "off", // 공통 설정이 되어있는데, edge 확장이 제대로 인식을 못해서 경고를 끔
+    "typescript-config/strict": "off" // ""
+  }
+}

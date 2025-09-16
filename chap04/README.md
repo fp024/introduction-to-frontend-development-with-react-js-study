@@ -47,13 +47,25 @@ MS Edge 확장에서는 button 타입을 항상 지정할 것을 권장했다.
 
 
 
+### ✔️ 셀프 체크
+
+* [vite-react-chap04-selfcheck](vite-react-chap04-selfcheck)
+
+저자님과 비교해서 약간 구현이 다르긴 한데.. 개념은 비슷한 것 같다. 😅
+
+* 저자님 답안
+  * https://github.com/fp024/introduction-to-frontend-development-with-react-js-1st/tree/master/ch04/selfcheck
+
+상태안에 이용가능한 아이템이 별도로 들어가 있어서 조금 복잡해보인다. 😅
+
 
 
 
 ## 의견
 
-* ...
-  
+* 4장을 잘 끝냈다, 셀프 체크가 좀 어려웠다 😂
+
+
 
 ## 정오표
 
