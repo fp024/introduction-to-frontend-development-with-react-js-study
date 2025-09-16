@@ -1,6 +1,3 @@
-import { useState } from 'react';
-
-export default function CountDisplay() {
-  const [count] = useState(0);
+export default function CountDisplay({ count }: Readonly<{ count: number }>) {
   return <h1>Count: {count}</h1>;
 }

@@ -1,11 +1,12 @@
-import { useState } from 'react';
-
-export default function CountButtons() {
-  const [count, setCount] = useState(0);
-  const increment = () => setCount((count) => count + 1);
-  const decrement = () => setCount((count) => count - 1);
-  const reset = () => setCount(0);
-
+export default function CountButtons({
+  increment,
+  decrement,
+  reset,
+}: Readonly<{
+  increment: () => void;
+  decrement: () => void;
+  reset: () => void;
+}>) {
   return (
     <>
       <button type="button" onClick={decrement}>
