@@ -17,6 +17,12 @@ export default function App() {
       <button type="button" onClick={() => countDispatch({ type: 'INCREMENT' })}>
         증가
       </button>
+      <button type="button" onClick={() => countDispatch({ type: 'DECREMENT' })}>
+        감소
+      </button>
+      <button type="button" onClick={() => countDispatch({ type: 'RESET' })}>
+        초기화
+      </button>
       <h2>User: {user.name}</h2>
       <button
         type="button"
