@@ -8,7 +8,9 @@ const packageManager = rootPackage.packageManager;
 console.log(`Syncing packageManager: ${packageManager}\n`);
 
 // 모든 하위 프로젝트의 package.json 찾기
-const packageFiles = glob.sync('chap*/*/package.json');
+const packageFiles = glob.sync("chap*/**/package.json", {
+  ignore: ["**/node_modules/**", "**/dist/**", "**/build/**"],
+});
 
 packageFiles.forEach((file) => {
   const pkg = JSON.parse(readFileSync(file, 'utf-8'));
