@@ -78,21 +78,25 @@ packages:
 
 이 프로젝트는 **pnpm**을 사용합니다. 각 프로젝트의 `package.json`에 `packageManager` 필드가 설정되어 있다.
 
-#### pnpm 버전 변경 및 동기화
+#### pnpm 버전 변경
 
 ```bash
 # 1. 루트에서 pnpm 버전 변경
-corepack use pnpm@10.25.0
-
-# 2. 모든 하위 프로젝트에 동기화
-pnpm run sync-pm
+corepack use pnpm@10.26.1
 ```
+> 하위 프로젝트의 package.json에는 packageManager을 정의하지 않고,
+> 프로젝트 루트의 package.json 내용을 사용하므로 하위 프로젝트와 명시적으로 동기화 할 필요는 없다.
 
-`sync-pm` 스크립트는 루트의 `packageManager` 값을 모든 하위 프로젝트의 `package.json`에 자동으로 적용한다.
+### 의존성 설치
+```bash
+# 프로젝트 루트 디렉토리에서 실행
+pnpm run install-all
+```
 
 ### 의존성 업데이트
 
 ```bash
+# 프로젝트 루트 디렉토리에서 실행
 # 안전한 범위 내 업데이트 (^, ~ 범위 내에서)
 pnpm run update-all
 
@@ -155,7 +159,7 @@ bash clean-node-modules-dir.sh
 
 ```bash
 # 설치
-pnpm install                      # 루트 + 모든 워크스페이스 패키지 설치
+pnpm run install-all              # 루트 + 모든 워크스페이스 패키지 설치
 
 # 업데이트
 pnpm run update-all               # 안전한 범위 내 업데이트
@@ -163,7 +167,6 @@ pnpm run update-latest            # 최신 버전으로 업데이트 (주의!)
 
 # pnpm 버전 관리
 corepack use pnpm@버전            # pnpm 버전 변경
-pnpm run sync-pm                  # 모든 하위 프로젝트에 동기화
 
 # 포맷팅
 pnpm run format                   # 전체 코드 포맷팅
