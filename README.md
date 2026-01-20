@@ -81,8 +81,8 @@ packages:
 #### pnpm 버전 변경
 
 ```bash
-# 1. 루트에서 pnpm 버전 변경
-corepack use pnpm@10.26.1
+# 1. 루트 경로에서 pnpm 최신 버전 업데이트
+corepack use pnpm@latest
 ```
 > 하위 프로젝트의 package.json에는 packageManager을 정의하지 않고,
 > 프로젝트 루트의 package.json 내용을 사용하므로 하위 프로젝트와 명시적으로 동기화 할 필요는 없다.
