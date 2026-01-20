@@ -1,5 +1,7 @@
 version: "0.2"
-ignorePaths: []
+ignorePaths: 
+  - pnpm-lock.yaml
+  - pnpm-workspace.yaml
 dictionaryDefinitions: []
 dictionaries: []
 words:
