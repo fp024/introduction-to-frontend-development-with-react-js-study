@@ -1,10 +1,10 @@
 {
-  "extends": [
-    "development"
-  ],
+  "extends": ["development"],
   "hints": {
+    "no-inline-styles": "off", // 태그에 인라인 스타일 경고
+    "axe/forms": "off", // input에 반드시 label이 필요하다는 경고
     "typescript-config/is-valid": "off",
     "typescript-config/consistent-casing": "off", // 공통 설정이 되어있는데, edge 확장이 제대로 인식을 못해서 경고를 끔
-    "typescript-config/strict": "off" // ""
-  }
+    "typescript-config/strict": "off", // ""
+  },
 }

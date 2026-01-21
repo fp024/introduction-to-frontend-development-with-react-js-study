@@ -12,7 +12,7 @@ export default function itemReducer(state: Item[], action: ItemAction): Item[] {
         return state;
       }
       // 이미 있으면 추가하지 않음.
-      if (state.find((i) => i.id === action.payload.id)) {
+      if (state.some((i) => i.id === action.payload.id)) {
         return state;
       }
       return [...state, action.payload];
