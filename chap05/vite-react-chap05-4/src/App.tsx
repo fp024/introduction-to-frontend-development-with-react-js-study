@@ -1,7 +1,5 @@
-import './App.css';
-
 function App() {
-  return <img src="/assets/images/ocean.jpg" alt="ocean" />;
+  return <div className="bg"></div>;
 }
 
 export default App;

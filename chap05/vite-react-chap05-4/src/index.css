@@ -1,1 +1,5 @@
-/* 내용 비움 */
+.bg {
+  width: 640px;
+  height: 360px;
+  background: url('/assets/images/ocean.jpg') no-repeat center center;
+}
