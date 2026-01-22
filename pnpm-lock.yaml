@@ -359,7 +359,7 @@ importers:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@24.10.9)
 
-  chap05/vite-react-chap05:
+  chap05/vite-react-chap05-1:
     dependencies:
       react:
         specifier: ^19.2.3
