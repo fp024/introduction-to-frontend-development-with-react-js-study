@@ -1,4 +1,4 @@
-# 5.3 Tailwind CSS로 스타일링하기
+# 5.3.2 tailwind-merge 라이브러리
 
 
 
@@ -12,7 +12,15 @@ pnpm install tailwindcss @tailwindcss/vite
 
 
 
-### 기본 설정
+### tailwind-merge 추가 설치
+
+```sh
+pnpm install tailwind-merge
+```
+
+
+
+### tailwind 기본 설정
 
 * vite.config.ts : tailwindcss vite 플러그인 설정
 
