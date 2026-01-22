@@ -8,6 +8,7 @@ dictionaries: []
 words:
   - classnames
   - esbuild
+  - nanum
   - pixabay
   - selfcheck
 ignoreWords:
