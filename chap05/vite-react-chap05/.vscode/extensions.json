@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "esbenp.prettier-vscode",
+    "hossaini.bootstrap-intellisense",
+    "ecmel.vscode-html-css",
+    "PKief.material-icon-theme",
+    "ritwickdey.LiveServer",
+    "formulahendry.code-runner",
+    "solnurkarim.html-to-css-autocompletion"
+  ]
+}
