@@ -1,5 +1,9 @@
 function Child() {
-  return <button className="btn">Child Button</button>;
+  return (
+    <button type="button" className="btn">
+      Child Button
+    </button>
+  );
 }
 
 export default Child;

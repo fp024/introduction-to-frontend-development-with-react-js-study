@@ -1,10 +1,12 @@
-import './App.css';
+import styles from './App.module.css';
 import Child from './components/Child';
 
 function App() {
   return (
     <>
-      <button className="btn">App Button</button>
+      <button type="button" className={styles.btn}>
+        App Button
+      </button>
       <Child />
     </>
   );
