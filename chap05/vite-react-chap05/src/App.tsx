@@ -1,13 +1,13 @@
 import './App.css';
+import Child from './components/Child';
 
 function App() {
-  const styles = {
-    backgroundColor: 'blue',
-    color: 'white',
-    fontSize: '16px',
-    padding: '10px',
-  };
-  return <h1 style={styles}>Inline Style</h1>;
+  return (
+    <>
+      <button className="btn">App Button</button>
+      <Child />
+    </>
+  );
 }
 
 export default App;
