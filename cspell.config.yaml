@@ -1,11 +1,12 @@
 version: "0.2"
-ignorePaths: 
+ignorePaths:
   - pnpm-lock.yaml
   - pnpm-workspace.yaml
   - .prettierignore
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - classnames
   - esbuild
   - selfcheck
 ignoreWords:
