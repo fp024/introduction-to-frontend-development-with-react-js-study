@@ -1,12 +1,14 @@
-import classNames from 'classnames';
+import style from './App.module.css';
+import classNames from 'classnames/bind';
 import Child from './components/Child';
-import './App.css';
 
 function App() {
   const isActive = true;
+  const cx = classNames.bind(style);
+
   return (
     <>
-      <button type="button" className={classNames('btn', { 'is-active': isActive })}>
+      <button type="button" className={cx({ btn: true, 'is-active': isActive })}>
         App Button
       </button>
       <Child />
