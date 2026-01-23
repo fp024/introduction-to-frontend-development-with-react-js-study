@@ -47,6 +47,13 @@
 
 
 
+## 셀프 체크
+
+* 다음 todo_list 디렉토리의 내용을 퍼블리싱하기!
+  * https://github.com/fp024/introduction-to-frontend-development-with-react-js-1st/tree/master/ch05/selfcheck/todo_html
+
+
+
 ## 의견
 
 * ...
