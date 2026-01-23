@@ -51,12 +51,14 @@
 
 * 다음 todo_list 디렉토리의 내용을 퍼블리싱하기!
   * https://github.com/fp024/introduction-to-frontend-development-with-react-js-1st/tree/master/ch05/selfcheck/todo_html
+* 답안 작성
+  * [vite-react-chap05-selfcheck](vite-react-chap05-selfcheck)
 
 
 
 ## 의견
 
-* ...
+* 일단은 잘 끝낸 것 같긴한데.. 금방 잊어버릴 것 같다...😅
   
 
 ## 정오표

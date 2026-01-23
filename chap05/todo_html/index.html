@@ -1,36 +1,49 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="todo">
-      <h1 className="todo__title">Todo List</h1>
-      <p className="todo__subtitle">Please enter your details to continue.</p>
-      {/* <!-- 할 일 등록 --> */}
-      <form className="todo__form">
-        <div className="todo__editor">
-          <input type="text" className="todo__input" placeholder="Enter Todo List" />
-          <button className="todo__button" type="submit">
-            Add
-          </button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo">
+      <h1 class="todo__title">Todo List</h1>
+      <p class="todo__subtitle">Please enter your details to continue.</p>
+      <!-- 할 일 등록 -->
+      <form class="todo__form">
+        <div class="todo__editor">
+          <input
+            type="text"
+            class="todo__input"
+            placeholder="Enter Todo List"
+          />
+          <button class="todo__button" type="submit">Add</button>
         </div>
       </form>
-      {/* <!-- 할 일 목록 --> */}
-      <ul className="todo__list">
-        {/* <!-- 할 일 목록이 없을 때 --> */}
-        <li className="todo__item todo__item--empty">
-          <p className="todo__text--empty">There are no registered tasks</p>
+      <!-- 할 일 목록 -->
+      <ul class="todo__list">
+        <!-- 할 일 목록이 없을 때 -->
+        <li class="todo__item todo__item--empty">
+          <p class="todo__text--empty">There are no registered tasks</p>
         </li>
-        {/* <!-- 할 일 목록이 있을 때 --> */}
-        {/* <!-- 할 일이 완료되면 .todo__item--complete 추가 --> */}
-        <li className="todo__item todo__item--complete">
-          <div className="todo__checkbox-group">
-            <input type="checkbox" className="todo__checkbox" id="todo-checkbox-1" defaultChecked />
-            <label htmlFor="todo-checkbox-1">Eat Breakfast</label>
+        <!-- 할 일 목록이 있을 때 -->
+        <!-- 할 일이 완료되면 .todo__item--complete 추가 -->
+        <li class="todo__item todo__item--complete">
+          <div class="todo__checkbox-group">
+            <input type="checkbox" class="todo__checkbox" checked />
+            <label>Eat Breakfast</label>
           </div>
-          {/* <!-- 할 일을 수정할 때만 노출 (.todo__checkbox-group은 비노출) --> */}
-          {/* <!-- <input type="text" class="todo__modify-input" /> --> */}
-          <div className="todo__button-group">
-            <button type="button" className="todo__action-button">
+          <!-- 할 일을 수정할 때만 노출 (.todo__checkbox-group은 비노출) -->
+          <!-- <input type="text" class="todo__modify-input" /> -->
+          <div class="todo__button-group">
+            <button class="todo__action-button">
               <svg
                 width="23"
                 height="23"
@@ -44,7 +57,7 @@ function App() {
                 />
               </svg>
             </button>
-            <button className="todo__action-button">
+            <button class="todo__action-button">
               <svg
                 width="15"
                 height="16"
@@ -53,8 +66,8 @@ function App() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
                   d="M7.50002 9.81827L12.9548 15.2731L14.7731 13.4548L9.31829 8L14.7731 2.54518L12.9548 0.726901L7.50002 6.18173L2.04519 0.726902L0.226918 2.54518L5.68174 8L0.226919 13.4548L2.04519 15.2731L7.50002 9.81827ZM7.50002 9.81827L9.31829 8L7.50002 6.18173L5.68174 8L7.50002 9.81827Z"
                   fill="#4F4F4F"
                 />
@@ -66,15 +79,15 @@ function App() {
             </button>
           </div>
         </li>
-        <li className="todo__item todo__item--complete">
-          {/* <!-- <div class="todo__checkbox-group">
+        <li class="todo__item todo__item--complete">
+          <!-- <div class="todo__checkbox-group">
             <input type="checkbox" class="todo__checkbox" checked />
             <label>Eat Breakfast</label>
-          </div> --> */}
-          {/* <!-- 할 일을 수정할 때만 노출 (.todo__checkbox-group은 비노출) --> */}
-          <input type="text" className="todo__modify-input" />
-          <div className="todo__button-group">
-            <button type="button" className="todo__action-button">
+          </div> -->
+          <!-- 할 일을 수정할 때만 노출 (.todo__checkbox-group은 비노출) -->
+          <input type="text" class="todo__modify-input" />
+          <div class="todo__button-group">
+            <button class="todo__action-button">
               <svg
                 width="23"
                 height="23"
@@ -88,7 +101,7 @@ function App() {
                 />
               </svg>
             </button>
-            <button type="button" className="todo__action-button">
+            <button class="todo__action-button">
               <svg
                 width="15"
                 height="16"
@@ -97,8 +110,8 @@ function App() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
                   d="M7.50002 9.81827L12.9548 15.2731L14.7731 13.4548L9.31829 8L14.7731 2.54518L12.9548 0.726901L7.50002 6.18173L2.04519 0.726902L0.226918 2.54518L5.68174 8L0.226919 13.4548L2.04519 15.2731L7.50002 9.81827ZM7.50002 9.81827L9.31829 8L7.50002 6.18173L5.68174 8L7.50002 9.81827Z"
                   fill="#4F4F4F"
                 />
@@ -112,7 +125,5 @@ function App() {
         </li>
       </ul>
     </div>
-  );
-}
-
-export default App;
+  </body>
+</html>
