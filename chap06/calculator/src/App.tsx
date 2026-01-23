@@ -10,7 +10,21 @@ function App() {
 
   // 숫자 버튼 클릭 처리 함수
   const handleNumberClick = (event: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
-    console.log(event.currentTarget.value);
+    const value = event.currentTarget.value;
+    if (state.isNewNumber) {
+      // 현재 숫자를 새로운 숫자로 대체 (기존 state값에 currentNumber, isNewNumber를 새로운 값으로 업데이트한 복제본을 설정)
+      setState({
+        ...state,
+        currentNumber: value,
+        isNewNumber: false,
+      });
+    } else {
+      // 기존 숫자에 새로운 숫자를 이어 붙임
+      setState({
+        ...state,
+        currentNumber: state.currentNumber + value,
+      });
+    }
   };
 
   // 연산 기호 버튼 클릭 처리 함수
