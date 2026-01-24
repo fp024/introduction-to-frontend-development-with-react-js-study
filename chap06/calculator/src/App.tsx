@@ -1,3 +1,4 @@
+import Decimal from 'decimal.js';
 import { useState } from 'react';
 
 // --- (1)
@@ -38,6 +39,10 @@ function App() {
 
   // 연산 기호 버튼 클릭 처리 함수
   const handleOperatorClick = (event: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+    if (state.currentNumber === '0') {
+      return;
+    }
+
     // 현재 클릭한 연산 기호 가져오기
     const operator = event.currentTarget.value; // --- (3)
 
@@ -51,16 +56,16 @@ function App() {
       // 연산 기호에 따라 연산 수행 --- (8)
       switch (state.operation) {
         case '+':
-          result = prev + current;
+          result = new Decimal(prev).plus(current).toNumber();
           break;
         case '-':
-          result = prev - current;
+          result = new Decimal(prev).minus(current).toNumber();
           break;
         case '*':
-          result = prev * current;
+          result = new Decimal(prev).times(current).toNumber();
           break;
         case '/':
-          result = prev / current;
+          result = new Decimal(prev).dividedBy(current).toNumber();
           break;
       }
 
@@ -81,6 +86,12 @@ function App() {
           isNewNumber: true,
         });
       }
+    } else if (state.currentNumber !== '' && operator === '=') {
+      // 숫자를 한번만 입력한 상태에서 등호를 입력한 경우
+      setState({
+        ...state,
+        isNewNumber: true,
+      });
     } else {
       // 첫 번째 숫자 입력 후 연산 기호 버튼 클릭시 --- (11)
       setState({
