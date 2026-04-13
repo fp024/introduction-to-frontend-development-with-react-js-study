@@ -167,7 +167,7 @@ pnpm run update-latest            # 최신 버전으로 업데이트 (주의!)
 
 # pnpm 버전 관리
 corepack use pnpm@버전            # pnpm 버전 변경
-corepack use pnpm@latest            # pnpm 버전 최신으로 변경
+corepack use pnpm@latest          # pnpm 버전 최신으로 변경
 
 # 포맷팅
 pnpm run format                   # 전체 코드 포맷팅
